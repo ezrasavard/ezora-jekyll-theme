@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Whedon Ipsum with Some Links
+title: Sample
 tagline: It must be bunnies
 permalink: "/sample/"
 cover: /media/spike.jpg

@@ -32,9 +32,12 @@
     
     <nav>
         <a href="{{ site.baseurl }}/">Blog</a>
-        <span class="separator">&bull;</span>
-        <a href="{{ site.baseurl }}/sample">SamplePage</a>
-        <span class="separator">&bull;</span>
+        {% for page in site.pages %}
+            {% if page.title != "Home" %}
+            <a href="{{ site.baseurl }}{{ page.permalink }}">{{ page.title }}</a>
+            <span class="separator">&bull;</span>
+            {% endif %}
+        {% endfor %}
         <a href="https://www.github.com/{{ site.github }}">GitHub</a>
         <span class="separator">&bull;</span>
         <a href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a>
