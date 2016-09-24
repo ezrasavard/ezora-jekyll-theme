@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "ezora-jekyll-theme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Ezra Savard"]
   spec.email         = ["git@ezrasavard.com"]
 
