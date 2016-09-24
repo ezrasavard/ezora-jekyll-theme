@@ -1,0 +1,47 @@
+title: Ezora Theme!
+email: git@ezrasavard.com
+greeting: Welcome to the Ezora Sample Site
+description: > # this means to ignore newlines until another tag
+    Ezora is a responsive Jekyll theme with a clean single column layout, nifty text overlays for images and a mobile friendly navigation bar.
+github:  ezrasavard
+linkedin: ezrasavard
+favicon: /media/favicons/red.png
+
+# Build settings
+paginate: 3
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.ezrasavard.com" # the base hostname & protocol for your site
+highlights: pygments
+permalink: posts/:title/
+include: ["_pages"]
+gems: [jekyll-paginate]
+markdown: kramdown
+excerpt_separator: "<!--more-->"
+sass:
+    sass_dir: _sass
+    style: compressed
+
+# cover images are expected to be 900px by 240px, or at least 15:4 aspect ratio
+# thumbnails look best with 3:1 or 5:2 ratios in this layout.
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            layout: "default"
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            author: "Ezra Savard"
+            cover: "/media/header.jpg"
+            layout: "post"
+    -
+        scope:
+            path: ""
+            type: "pages"
+        values:
+            author: "Ezra Savard"
+            cover: "/media/header.jpg"
+            layout: "default"

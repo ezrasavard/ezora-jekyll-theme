@@ -1,0 +1,48 @@
+---
+title:  Coding and Hipster Ipsum
+date:   2016-02-01
+cover:  /media/simblee_cover.jpg
+thumb:  /media/simblee_thumb.jpg
+
+---
+
+Four dollar toast lyft viral heirloom flexitarian, etsy shoreditch vaporware ramps meh. Jianbing roof party put a bird on it kombucha kale chips sustainable. Viral lo-fi tattooed, deep v you probably haven't heard of them ennui gochujang occupy. Fanny pack gentrify fingerstache live-edge. Normcore authentic poutine quinoa skateboard copper mug. Vaporware fanny pack neutra fixie affogato. Hoodie photo booth flannel waistcoat la croix chia.
+
+<!--more-->
+
+Tote bag helvetica cred tofu master cleanse, succulents letterpress pug try-hard. Iceland viral raw denim disrupt, vegan sartorial copper mug. Kitsch readymade put a bird on it, seitan salvia 3 wolf moon cray green juice. Normcore health goth bushwick, pug fam green juice pickled. Ugh portland freegan snackwave ennui readymade, man bun flexitarian. Microdosing fixie meggings next level fap, ramps bespoke. Butcher thundercats narwhal, chicharrones taxidermy asymmetrical selfies chartreuse.
+
+## Microprocessors are the Fixies of Computers
+Letterpress raclette single-origin coffee, 3 wolf moon portland flannel franzen sriracha mixtape. Hot chicken readymade kombucha, small batch tbh four loko scenester letterpress cred seitan truffaut. Skateboard pour-over gastropub, fap heirloom paleo street art polaroid meggings intelligentsia disrupt bespoke mustache chillwave drinking vinegar. Messenger bag tattooed brunch fanny pack, copper mug salvia actually tote bag tilde scenester. Twee ugh echo park subway tile tbh wolf. Plaid fixie iceland copper mug flannel. Fixie butcher keytar hammock, sustainable keffiyeh hexagon.
+
+Actually tattooed chia, activated charcoal microdosing wolf franzen affogato pabst meggings sustainable. Poutine blog franzen, food truck beard skateboard deep v forage neutra tacos keytar locavore farm-to-table. Banh mi raw denim kitsch lo-fi lumbersexual. Tumeric fashion axe tofu, chambray photo booth edison bulb brunch direct trade skateboard ugh helvetica. Bushwick tilde jean shorts selfies, helvetica street art af master cleanse farm-to-table marfa artisan leggings tofu hexagon. Drinking vinegar taxidermy franzen, chicharrones williamsburg butcher sriracha sustainable. Messenger bag green juice lo-fi, fixie organic brunch semiotics.
+
+### Here is some code:
+
+{% highlight C %}
+#define PWM16_MAX_VAL 65535
+const int led = 2; // the on-board LED pin, configured as output in other code
+
+//configure timer2 for 16 bit PWM usage
+void timer_config() {
+
+  NRF_TIMER2-&gt;TASKS_STOP = 1;
+  NRF_TIMER2-&gt;MODE = TIMER_MODE_MODE_Timer;
+  NRF_TIMER2-&gt;BITMODE = TIMER_BITMODE_BITMODE_16Bit;
+  NRF_TIMER2-&gt;PRESCALER = 1; // divide frequency down by 2^x
+  NRF_TIMER2-&gt;TASKS_CLEAR = 1; // Clear timer
+  NRF_TIMER2-&gt;INTENSET |= TIMER_INTENSET_COMPARE0_Enabled &lt;&lt; TIMER_INTENSET_COMPARE0_Pos;
+  NRF_TIMER2-&gt;INTENSET |= TIMER_INTENSET_COMPARE1_Enabled &lt;&lt; TIMER_INTENSET_COMPARE1_Pos;
+  NRF_TIMER2-&gt;CC[0] = PWM16_MAX_VAL; // this is related to a bug fix, see "my_isr()" comments
+  NRF_TIMER2-&gt;CC[1] = 0;
+  NRF_TIMER2-&gt;EVENTS_COMPARE[0] = 0;
+  NRF_TIMER2-&gt;EVENTS_COMPARE[1] = 0;
+  dynamic_attachInterrupt(TIMER2_IRQn, my_isr);
+}
+{% endhighlight %}
+
+## Low Level is the New High Level
+Typewriter hot chicken disrupt lo-fi artisan narwhal, sustainable prism ramps slow-carb bushwick. Cray polaroid butcher, tacos freegan trust fund thundercats chillwave brooklyn meh portland roof party organic taxidermy. Hammock fap small batch gluten-free freegan. Pork belly tacos next level hella, dreamcatcher tofu bushwick vice roof party fap kombucha taxidermy cornhole neutra iPhone. Actually stumptown celiac man braid narwhal. Man bun lomo ethical, farm-to-table celiac fanny pack lumbersexual dreamcatcher sriracha snackwave irony organic tbh mustache XOXO. Food truck post-ironic venmo everyday carry raclette beard.
+
+### Single Steppin'
+Cornhole everyday carry wolf, letterpress small batch unicorn street art keffiyeh pop-up la croix raclette. Lo-fi drinking vinegar you probably haven't heard of them seitan, 3 wolf moon succulents poke letterpress glossier. Wayfarers banh mi franzen, la croix flannel copper mug flexitarian small batch literally brooklyn af drinking vinegar echo park. Portland fanny pack actually edison bulb cold-pressed. Before they sold out ugh kinfolk jianbing hell of master cleanse. XOXO you probably haven't heard of them truffaut pinterest, kickstarter hoodie cardigan food truck. Austin synth PBR&B, wayfarers art party trust fund selfies XOXO leggings godard migas.

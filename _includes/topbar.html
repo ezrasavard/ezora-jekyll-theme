@@ -1,0 +1,45 @@
+<div class="topbar", "group">
+    <div class="image-box">
+        {% if page.cover %}
+        	<a href="{{ site.baseurl }}/"><img src="{{ page.cover }}"></a>
+        {% elsif site.cover %}
+            <a href="{{ site.baseurl }}/"><img src="{{ site.cover }}"></a>
+        {% endif %}
+        <container class="text-overlay">
+            {% if page.title != "Home" %}
+                <h1 class="title">{{ page.title }}</h1><br>
+            {% else %}
+                <h1 class="title">{{ site.greeting }}</h1><br>
+            {% endif %}
+            {% if page.tagline %}
+                <h1 class="tagline">{{ page.tagline }}</h1>
+            {% elsif page.date %}
+                <h1 class="tagline">{{ page.date | date_to_string }}</h1>
+            {% else %}
+                <h1 class="tagline">{{ site.description }}</h1>
+            {% endif %}
+        </container>
+    </div>
+    
+    
+    <div class="mobile-topbar">
+        {% if page.title != "Home" %}
+            <h1 class="title">{{ page.title }}</h1><br>
+        {% else %}
+            <h1 class="title">{{ site.greeting }}</h1><br>
+        {% endif %}
+    </div>
+    
+    <nav>
+        <a href="{{ site.baseurl }}/">Blog</a>
+        <span class="separator">&bull;</span>
+        <a href="{{ site.baseurl }}/sample">SamplePage</a>
+        <span class="separator">&bull;</span>
+        <a href="https://www.github.com/{{ site.github }}">GitHub</a>
+        <span class="separator">&bull;</span>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a>
+    </nav>
+</div>
+
+
+

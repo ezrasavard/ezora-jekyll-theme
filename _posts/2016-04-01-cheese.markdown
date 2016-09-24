@@ -1,0 +1,15 @@
+---
+title:  A Cheese Filled Post
+date:   2016-04-01
+cover:  /media/cheese.jpg
+---
+
+Thumnails can be generated from the cover image if one isn't provided in the post YAML, but it isn't necessary going to be optimal looking.
+
+Cheese on toast goat stilton. Cheese and wine fondue cow fromage frais who moved my cheese cut the cheese halloumi melted cheese. Cheese slices hard cheese ricotta lancashire the big cheese pepper jack cheeseburger cut the cheese. Queso cut the cheese cheese slices edam the big cheese bavarian bergkase melted cheese.
+
+<!--more-->
+
+Cheese and biscuits goat camembert de normandie. Chalk and cheese stinking bishop feta airedale blue castello cheese and biscuits mozzarella pepper jack. Cheese slices parmesan when the cheese comes out everybody's happy fromage croque monsieur cow cheese and wine st. agur blue cheese. Cheese and biscuits cheese strings danish fontina red leicester parmesan pepper jack cheese and wine when the cheese comes out everybody's happy. Taleggio.
+
+Cheese and wine rubber cheese lancashire. Cheese on toast pepper jack cheese on toast stilton brie cheesy grin the big cheese manchego. Smelly cheese bavarian bergkase cheese strings cheese on toast blue castello halloumi st. agur blue cheese port-salut. Cow cheddar cottage cheese brie fromage.
