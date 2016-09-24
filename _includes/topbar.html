@@ -1,9 +1,9 @@
 <div class="topbar", "group">
     <div class="image-box">
         {% if page.cover %}
-        	<a href="{{ site.baseurl }}/"><img src="{{ page.cover }}"></a>
+            <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/{{ page.cover }}"></a>
         {% elsif site.cover %}
-            <a href="{{ site.baseurl }}/"><img src="{{ site.cover }}"></a>
+            <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/{{ site.cover }}"></a>
         {% endif %}
         <container class="text-overlay">
             {% if page.title != "Home" %}

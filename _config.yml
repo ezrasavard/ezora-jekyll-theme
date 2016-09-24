@@ -9,7 +9,7 @@ favicon: /media/favicons/red.png
 
 # Build settings
 paginate: 3
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/ezorademo" # the subpath of your site, e.g. /blog
 url: "http://www.ezrasavard.com" # the base hostname & protocol for your site
 highlights: pygments
 permalink: posts/:title/
