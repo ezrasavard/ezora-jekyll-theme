@@ -8,6 +8,14 @@ Feel free to use this theme however you like (MIT License).
 
 In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
 
+## Screenshots!
+
+### Desktop
+![screenshot-desktop](https://github.com/ezrasavard/ezora-jekyll-theme/blob/master/screenshot.png)
+
+### Mobile
+![screenshot-mobile](https://github.com/ezrasavard/ezora-jekyll-theme/blob/master/screenshot-mobile.png)
+
 ## Installation
 
 Add this line to your Jekyll site's Gemfile:
