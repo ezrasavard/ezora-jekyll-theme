@@ -5,11 +5,12 @@ description: > # this means to ignore newlines until another tag
     Ezora is a responsive Jekyll theme with a clean single column layout, nifty text overlays for images and a mobile friendly navigation bar.
 github:  ezrasavard
 linkedin: ezrasavard
-favicon: /media/favicons/red.png
+favicon: favicon.png
 
 # Build settings
 paginate: 3
-baseurl: "/ezorademo" # the subpath of your site, e.g. /blog
+baseurl: "/ezorademo/" # the subpath of your site, e.g. /blog/
+#baseurl: ""
 url: "http://www.ezrasavard.com" # the base hostname & protocol for your site
 highlights: pygments
 permalink: posts/:title/

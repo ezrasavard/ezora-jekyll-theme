@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "ezora-jekyll-theme"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["Ezra Savard"]
   spec.email         = ["git@ezrasavard.com"]
 
@@ -10,7 +10,10 @@ Gem::Specification.new do |spec|
   spec.homepage      = "http://www.github.com/ezrasavard/ezora-jekyll-theme"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(_layouts|_includes|_sass|LICENSE|README)/i}) }
+  spec.files         = `git ls-files -z`.split("\x0").select do |f|
+  f.match(%r{favicon\.png|stylesheets|^(_(includes|layouts|sass)/|(_config|LICENSE|README|index)((\.(txt|md|markdown|yml|html)|$)))}i)
+  end
+  puts spec.files
 
   spec.add_development_dependency "jekyll", "~> 3.2"
   spec.add_development_dependency "bundler", "~> 1.12"

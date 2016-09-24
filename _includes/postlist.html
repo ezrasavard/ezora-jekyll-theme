@@ -6,11 +6,11 @@
         <a href="{{ post.url | prepend: site.baseurl }}">
             <div class="image-box">
                 {% if post.thumb %}
-                    <img src="{{ site.baseurl }}/{{ post.thumb }}">
+                    <img src="{{ site.baseurl }}{{ post.thumb }}">
                 {% elsif post.cover %}
-                    <img src="{{ site.baseurl }}/{{ post.cover }}">
+                    <img src="{{ site.baseurl }}{{ post.cover }}">
                 {% else %}
-                    <img src="{{ site.baseurl }}/{{ site.cover }}">
+                    <img src="{{ site.baseurl }}{{ site.cover }}">
                 {% endif %}
                 <container class="text-overlay">
                         <h1 class="title">{{ post.title }}</h1><br>
