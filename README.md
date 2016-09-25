@@ -8,8 +8,6 @@ I designed this theme from the ground up for [my own website](http://www.ezrasav
 
 Feel free to use this theme however you like (MIT License).
 
-In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
 ## Screenshots!
 
 ### Desktop
@@ -20,31 +18,9 @@ In this directory, you'll find the files you need to be able to package up your 
 
 ## Installation
 
-Add this line to your Jekyll site's Gemfile:
+To install Ezora, fork this repository and add your sites content =)
 
-```ruby
-gem "ezora-jekyll-theme"
-```
-
-And add this line to your Jekyll site:
-
-```yaml
-theme: ezora-jekyll-theme
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install ezora-jekyll-theme
-
-Lastly, make a symlink to the "stylesheets" directory from your site root directory. This is necessary due to some strangeness in the fairly new system of bundling Jekyll themes as Ruby gems.
-
-    $ ln -s /usr/local/rvm/gems/$RUBY_VERSION/gems/ezora-jekyll-theme-<VERSION>/stylesheets stylesheets
-
-Forking from [GitHub](http://www.github.com/ezrasavard/ezora-jekyll-theme) is also an option! =)
+_I am no longer supporting Ruby Gem based install, since the process is far too rough around the edges at present._
 
 ## Usage
 
@@ -52,19 +28,11 @@ Ezora uses a fairly minimal set of layouts and sass, and will automatically conf
 
 The **default** layout handles the home page and any other pages while the **post** layout extends the default slightly to include a date-stamp at the top of the page.
 
-Notable _includes are the shiny and responsive **topbar**, included in the default layout, and the **postlist**, which is a paginated pile of posts you can include in any page, like the default home page does. You can specify your navigation menu links in **topbar**.
+Notable _includes are the shiny and responsive **topbar**, included in the default layout, the **navbar** and the **postlist**, which is a paginated pile of posts you can include in any page, like the default home page does. You can specify your navigation menu links in **navbar** if you don't like it generating them for all your pages, GitHub and LinkedIn accounts. You can also add more social accounts if you like by extending the list in navbar.html.
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/ezrasavard/ezora-jekyll-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-You theme is setup just like a normal Jelyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
 
 ## License
 
