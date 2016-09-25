@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "ezora-jekyll-theme"
-  spec.version       = "1.0.1"
+  spec.version       = "1.0.2"
   spec.authors       = ["Ezra Savard"]
   spec.email         = ["git@ezrasavard.com"]
 
@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f|
-  f.match(%r{favicon\.png|stylesheets|^(_(includes|layouts|sass)/|(_config|LICENSE|README|index)((\.(txt|md|markdown|yml|html)|$)))}i)
+  f.match(%r{favicon\.png|css|^(_(includes|layouts|sass)/|(_config|LICENSE|README|index)((\.(txt|md|markdown|yml|html)|$)))}i)
   end
   puts spec.files
 
