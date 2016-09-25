@@ -6,7 +6,11 @@
             <a href="{{ site.baseurl }}{{ pages.permalink }}">{{ pages.title }}</a>
         {% endif %}
     {% endfor %}
-    <a href="https://www.github.com/{{ site.github }}">GitHub</a>
-    <span class="separator">&bull;</span>
-    <a href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a>
+    {% if site.github %}
+        <a href="https://www.github.com/{{ site.github }}">GitHub</a>
+        <span class="separator">&bull;</span>
+    {% endif %}
+    {% if site.linkedin %}
+        <a href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a>
+    {% endif %}
 </nav>
