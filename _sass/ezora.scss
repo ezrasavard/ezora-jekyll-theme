@@ -6,8 +6,9 @@
 
 body {
   line-height: 28px;
+  font-size: 11pt;
   background-color: $bg-color;
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: $normal-color;
   -webkit-font-smoothing: antialiased;
@@ -23,23 +24,23 @@ body {
 }
 
 .divider {  // accommodate different browsers
-  background: -webkit-linear-gradient(left,rgba(255,255,255,0),$bg-color-dark,rgba(255,255,255,0));
-  background: linear-gradient(to right,rgba(255,255,255,0),$bg-color-dark,rgba(255,255,255,0));
-  height: 1px;
-  margin: 32px 0;
+  //background: -webkit-linear-gradient(left,rgba(255,255,255,0),$bg-color-dark,rgba(255,255,255,0));
+  //background: linear-gradient(to right,rgba(255,255,255,0),$bg-color-dark,rgba(255,255,255,0));
+  //height: 2px;
+  //margin: 32px 0;
+  margin: 32px 32px;
 }
 
 footer {
   margin: 30px 0 10px;
+  padding-top: 20px;
   text-align: center;
   color: $light-color;
-  .divider {
-    margin: 10px 0 16px;
-  }
 }
 
 h1 {
   color: $dark-color;
+  font-family: 'Raleway', Arial, sans-serif;
   margin: 18px 0px 10px;
   padding: 6px 0px 6px 0px;
   font-size: 24px;
@@ -53,17 +54,24 @@ h1 {
 }
 
 .date {
-    font-family: Monaco, "Courier New", monospace;
+    //font-family: Monaco, "Courier New", monospace;
+    font-family: 'Oswald', sans-serif;
     color: $normal-color;
     margin: 6px 0px 15px;
     font-size: 18px;
 }
 
-h2 {
+h2, .pagination {
+  font-family: 'Raleway', Arial, sans-serif;
   color: $normal-color;
   margin: 10px 0px 6px;
   font-size: 18px;
 }
+
+.pagination {
+  text-align: center;
+}
+
 
 p {
     margin-bottom: 15px;
@@ -78,7 +86,7 @@ main {
     padding-left: $column-padding;
     padding-right: $column-padding;
   }
-  img {
+  img, iframe {
     margin: 25px auto;
     max-width: 100%;
     // nice fade-y box shadow
@@ -104,6 +112,7 @@ main {
 
 /* Top Cover Image Bar */
 .topbar {
+  font-family: 'Raleway', Arial, sans-serif;
   background: $bg-color-dark-backup;
   background: $bg-color-dark;
   margin: 0px auto 20px;
@@ -139,6 +148,10 @@ main {
   }
 }
 
+.snippet {
+  padding-bottom: 40px;
+}
+
 .mobile-topbar {
   display: none;
   background: inherit;
@@ -165,6 +178,7 @@ main {
     max-width: 80%;
   }
   h1 {
+    font-family: 'Raleway', Arial, sans-serif;
     background: $bg-color-dark-backup;
     background: $bg-color-dark;
     position: relative;
@@ -204,8 +218,57 @@ nav {
     color: $light-color;
 }
 
+.lineno { 
+  background: $bg-color;
+  color: $light-color; 
+  display: inline-block; 
+  padding: 0 5px; 
+  border-right:1px solid #ccc;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul, ol {
+    list-style-position: inside;
+    padding-bottom: 12px;
+}
+
+td {
+  padding-right: 8px;
+}
+
+table {
+  margin: auto;
+  padding-bottom: 14px;
+}
+
+
+a.footnote:before {   
+ content: "[";
+}
+
+a.footnote:after {
+    content: "]";
+}
+
 .highlight {
+  
+  overflow: auto;
   margin: 40px 0;
+  background: $bg-color;
+  border: 1px solid;
+  border-color: #e5e5e5 #dbdbdb #d2d2d2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  display: block;
   .c {
     color: #998;
     font-style: italic;
@@ -457,4 +520,8 @@ nav {
     color: #099;
   }
   // Literal.Number.Integer.Long
+}
+
+.code {
+  padding-left: 10px;
 }

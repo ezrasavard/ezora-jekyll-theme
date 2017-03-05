@@ -1,0 +1,23 @@
+{% assign related_list = nil %}
+{% for tag in include.tags %}
+    {% for post in site.posts %}
+        {% if post.title != page.title %}
+                {% for test_tag in post.tags %}
+                    {% if test_tag == tag %}
+                        {% assign tmp = nil %}
+                        {% capture tmp %}<li><a href="{{ post.url | prepend: site.baseurl }}">[{{ post.date | date_to_string }}] {{ post.title }}</a></li>{% endcapture %}
+                        {% assign related_list = related_list | append: tmp | append: ";" %}
+                    {% endif %}
+                {% endfor %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+<div>
+    {% if related_list %}
+        <h2>Related Posts:</h2>
+        <ul>
+        {{ related_list | split: ";" | uniq | join: ""}}
+        </ul>
+    {% endif %}
+</div>

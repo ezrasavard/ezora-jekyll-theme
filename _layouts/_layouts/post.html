@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article>
+    
+    {% if page.date %}
+        <h1 class="date">{{ page.date | date_to_string }}:</h1>
+    {% else %}
+        <h1 class="date">Some day, unknown to us...</h1>
+    {% endif %}
+    
+    {{ content }}
+    
+    {% include related.html tags=page.tags %}
+
+
+</article>

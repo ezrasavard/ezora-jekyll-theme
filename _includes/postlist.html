@@ -1,28 +1,28 @@
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-    {% if forloop.index0 != 0 %}
-        <div class="divider"></div>
-    {% endif %}
-        <a href="{{ post.url | prepend: site.baseurl }}">
-            <div class="image-box">
-                {% if post.thumb %}
-                    <img src="{{ site.baseurl }}{{ post.thumb }}">
-                {% elsif post.cover %}
-                    <img src="{{ site.baseurl }}{{ post.cover }}">
-                {% else %}
-                    <img src="{{ site.baseurl }}{{ site.cover }}">
-                {% endif %}
-                <container class="text-overlay">
-                        <h1 class="title">{{ post.title }}</h1><br>
-                        <h1 class="tagline">{{ post.date | date_to_string }}</h1>
-                </container>
-            </div>
-        </a>
+<div class="snippet">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <div class="image-box">
+            {% if post.thumb %}
+                <img src="{{ site.baseurl }}{{ post.thumb }}">
+            {% elsif post.cover %}
+                <img src="{{ site.baseurl }}{{ post.cover }}">
+            {% else %}
+                <img src="{{ site.baseurl }}{{ site.cover }}">
+            {% endif %}
+            <container class="text-overlay">
+                    <h1 class="title">{{ post.title }}</h1><br>
+                    <h1 class="tagline">{{ post.date | date_to_string }}</h1>
+            </container>
+        </div>
+    </a>
         
-        {% if post.excerpt %}
-            <p>{{ post.excerpt }}</p>
-        {% endif %}
-    {% endfor %}
+    {% if post.excerpt %}
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ post.url | prepend: site.baseurl }}"><p style="text-align:center">Read More</p></a>
+    {% endif %}
+    </div>
+{% endfor %}
 
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
