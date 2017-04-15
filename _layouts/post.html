@@ -10,6 +10,9 @@ layout: default
         <h1 class="date">Some day, unknown to us...</h1>
     {% endif %}
     
-    {{ content }}    
+    {{ content }}
+    
+    {% include related.html tags=page.tags %}
+
 
 </article>
