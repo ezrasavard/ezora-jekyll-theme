@@ -15,7 +15,7 @@ url: "http://www.ezrasavard.com" # the base hostname & protocol for your site
 highlights: pygments
 permalink: posts/:title/
 include: ["_pages"]
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 markdown: kramdown
 excerpt_separator: "<!--more-->"
 sass:
