@@ -4,7 +4,7 @@ Ezora is a responsive Jekyll theme with a clean single column layout, nifty text
 
 I designed this theme from the ground up for [my own website](http://www.ezrasavard.com) and had some inspiration from the [Flex Jekyll Theme](http://the-development.github.io/flex/) (fonts!) and [Lise Savard's Blog](http://lisesavard.com/).
 
-### [Try Ezora Live!](http://www.ezrasavard.com/ezorademo)
+### [Try Ezora Live!](https://ezrasavard.github.io/ezora-jekyll-theme)
 
 Feel free to use this theme however you like (MIT License).
 
@@ -19,8 +19,6 @@ Feel free to use this theme however you like (MIT License).
 ## Installation
 
 To install Ezora, fork this repository and add your sites content =)
-
-_I am no longer supporting Ruby Gem based install, since the process is far too rough around the edges at present._
 
 ## Usage
 
