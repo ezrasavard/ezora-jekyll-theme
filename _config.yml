@@ -6,6 +6,23 @@ description: > # this means to ignore newlines until another tag
 github:  ezrasavard
 linkedin: ezrasavard
 favicon: favicon.png
+navlinks:
+    -
+        text: Home
+        url: /
+        internal: True
+    -
+        text: Sample Page
+        url: /sample
+        internal: True
+    -
+        text: Github
+        url: https://www.github.com/ezrasavard
+        internal: False
+    -
+        text: LinkedIn
+        url: https://www.linkedin.com/in/ezrasavard
+        internal: False
 
 # Build settings
 paginate: 3

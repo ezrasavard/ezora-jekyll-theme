@@ -1,16 +1,13 @@
 <nav>
-    <a href="{{ site.baseurl }}/">Blog</a>
-    {% for pages in site.pages %}
-        {% if pages.title != "Home" %}
-            <span class="separator">&bull;</span>
-            <a href="{{ site.baseurl }}{{ pages.permalink }}">{{ pages.title }}</a>
+    {% for x in site.navlinks %}
+        {% if forloop.first == false %}
+            <span>&bull;</span>
+        {% endif %}
+        {% if x.internal == true %}
+            <a class=navlink href="{{ site.baseurl }}{{ x.url }}">{{ x.text }}</a>
+        {% else %}
+            <a class=navlink href="{{ x.url }}">{{ x.text }}</a>
         {% endif %}
     {% endfor %}
-    {% if site.github %}
-        <a href="https://www.github.com/{{ site.github }}">GitHub</a>
-        <span class="separator">&bull;</span>
-    {% endif %}
-    {% if site.linkedin %}
-        <a href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a>
-    {% endif %}
 </nav>
+
